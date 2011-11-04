@@ -76,6 +76,7 @@ for each of the files.
 %doc %{_texmfdistdir}/source/latex/splitindex/splitindex.java
 %doc %{_texmfdistdir}/source/latex/splitindex/splitindex.pl
 %doc %{_texmfdistdir}/source/latex/splitindex/splitindex.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -92,3 +93,5 @@ mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf texmf-dist %{buildroot}%{_datadir}
 mkdir -p %{buildroot}%{_mandir}/man1
 mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
