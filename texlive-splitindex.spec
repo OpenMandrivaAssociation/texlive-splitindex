@@ -1,12 +1,12 @@
-# revision 18835
+# revision 26313
 # category Package
 # catalog-ctan /macros/latex/contrib/splitindex
-# catalog-date 2009-03-30 10:35:07 +0200
+# catalog-date 2012-04-22 23:21:05 +0200
 # catalog-license lppl
 # catalog-version 1.1a
 Name:		texlive-splitindex
 Version:	1.1a
-Release:	2
+Release:	3
 Summary:	Unlimited number of indexes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/splitindex
