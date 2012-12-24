@@ -50,22 +50,6 @@ for each of the files.
 %doc %{_texmfdistdir}/doc/latex/splitindex/splitidx.pdf
 %doc %{_mandir}/man1/splitindex.1*
 %doc %{_texmfdir}/doc/man/man1/splitindex.man1.pdf
-#- source
-%doc %{_texmfdistdir}/source/latex/splitindex/README
-%doc %{_texmfdistdir}/source/latex/splitindex/install.sh
-%doc %{_texmfdistdir}/source/latex/splitindex/install.txt
-%doc %{_texmfdistdir}/source/latex/splitindex/manifest.txt
-%doc %{_texmfdistdir}/source/latex/splitindex/splitidx.dtx
-%doc %{_texmfdistdir}/source/latex/splitindex/splitidx.ins
-%doc %{_texmfdistdir}/source/latex/splitindex/splitindex-Linux-i386
-%doc %{_texmfdistdir}/source/latex/splitindex/splitindex-OpenBSD-i386
-%doc %{_texmfdistdir}/source/latex/splitindex/splitindex.1
-%doc %{_texmfdistdir}/source/latex/splitindex/splitindex.c
-%doc %{_texmfdistdir}/source/latex/splitindex/splitindex.class
-%doc %{_texmfdistdir}/source/latex/splitindex/splitindex.exe
-%doc %{_texmfdistdir}/source/latex/splitindex/splitindex.java
-%doc %{_texmfdistdir}/source/latex/splitindex/splitindex.pl
-%doc %{_texmfdistdir}/source/latex/splitindex/splitindex.tex
 
 #-----------------------------------------------------------------------
 %prep
@@ -78,25 +62,9 @@ mkdir -p %{buildroot}%{_bindir}
 pushd %{buildroot}%{_bindir}
     ln -sf %{_texmfdistdir}/scripts/splitindex/perl/splitindex.pl splitindex
 popd
+
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf texmf-dist %{buildroot}%{_datadir}
 mkdir -p %{buildroot}%{_mandir}/man1
 mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
-
-
-%changelog
-* Wed Aug 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.1a-3
-+ Revision: 812879
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.1a-2
-+ Revision: 756157
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.1a-1
-+ Revision: 719567
-- texlive-splitindex
-- texlive-splitindex
-- texlive-splitindex
-- texlive-splitindex
-
+rm -rf %{buildroot}%{_texmfdistdir}/source/
