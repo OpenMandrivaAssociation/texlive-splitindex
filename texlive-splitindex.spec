@@ -6,7 +6,7 @@
 # catalog-version 1.2a
 Name:		texlive-splitindex
 Version:	1.2a
-Release:	1
+Release:	2
 Summary:	Unlimited number of indexes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/splitindex
@@ -77,7 +77,7 @@ for each of the files.
 %install
 mkdir -p %{buildroot}%{_bindir}
 pushd %{buildroot}%{_bindir}
-    ln -sf %{_texmfdistdir}/scripts/splitindex/perl/splitindex.pl splitindex
+    ln -sf %{_texmfdistdir}/scripts/splitindex/splitindex.pl splitindex
 popd
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf-dist %{buildroot}%{_datadir}
