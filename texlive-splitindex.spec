@@ -6,7 +6,7 @@
 # catalog-version 1.2a
 Name:		texlive-splitindex
 Version:	1.2a
-Release:	7
+Release:	8
 Summary:	Unlimited number of indexes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/splitindex
