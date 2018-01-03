@@ -1,12 +1,6 @@
-# revision 29792
-# category Package
-# catalog-ctan /macros/latex/contrib/splitindex
-# catalog-date 2013-04-09 11:35:57 +0200
-# catalog-license lppl
-# catalog-version 1.2a
 Name:		texlive-splitindex
-Version:	1.2a
-Release:	10
+Version:	1.2c
+Release:	1
 Summary:	Unlimited number of indexes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/splitindex
@@ -42,31 +36,14 @@ for each of the files.
 #-----------------------------------------------------------------------
 %files
 %{_bindir}/splitindex
-%{_texmfdistdir}/scripts/splitindex/splitindex.pl
-%{_texmfdistdir}/scripts/splitindex/splitindex.tlu
-%{_texmfdistdir}/scripts/splitindex/splitindex_main.tlu
-%{_texmfdistdir}/tex/generic/splitindex/splitindex.tex
-%{_texmfdistdir}/tex/latex/splitindex/splitidx.sty
-%doc %{_texmfdistdir}/doc/latex/splitindex/README
-%doc %{_texmfdistdir}/doc/latex/splitindex/install.txt
-%doc %{_texmfdistdir}/doc/latex/splitindex/manifest.txt
-%doc %{_texmfdistdir}/doc/latex/splitindex/splitidx.pdf
+%{_texmfdistdir}/scripts/splitindex
+%{_texmfdistdir}/tex/generic/splitindex
+%{_texmfdistdir}/tex/latex/splitindex
+%doc %{_texmfdistdir}/doc/latex/splitindex
 %doc %{_mandir}/man1/splitindex.1*
 %doc %{_texmfdistdir}/doc/man/man1/splitindex.man1.pdf
 #- source
-%doc %{_texmfdistdir}/source/latex/splitindex/README
-%doc %{_texmfdistdir}/source/latex/splitindex/install.sh
-%doc %{_texmfdistdir}/source/latex/splitindex/install.txt
-%doc %{_texmfdistdir}/source/latex/splitindex/manifest.txt
-%doc %{_texmfdistdir}/source/latex/splitindex/splitidx.dtx
-%doc %{_texmfdistdir}/source/latex/splitindex/splitidx.ins
-%doc %{_texmfdistdir}/source/latex/splitindex/splitindex.1
-%doc %{_texmfdistdir}/source/latex/splitindex/splitindex.c
-%doc %{_texmfdistdir}/source/latex/splitindex/splitindex.java
-%doc %{_texmfdistdir}/source/latex/splitindex/splitindex.pl
-%doc %{_texmfdistdir}/source/latex/splitindex/splitindex.tex
-%doc %{_texmfdistdir}/source/latex/splitindex/splitindex.tlu
-%doc %{_texmfdistdir}/source/latex/splitindex/splitindex_main.tlu
+%doc %{_texmfdistdir}/source/latex/splitindex
 
 #-----------------------------------------------------------------------
 %prep
