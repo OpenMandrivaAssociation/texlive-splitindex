@@ -1,6 +1,6 @@
 Name:		texlive-splitindex
 Version:	1.2c
-Release:	1
+Release:	2
 Summary:	Unlimited number of indexes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/splitindex
