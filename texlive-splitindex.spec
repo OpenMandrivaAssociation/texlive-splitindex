@@ -3,7 +3,7 @@ Version:	39766
 Release:	2
 Summary:	Unlimited number of indexes
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/splitindex
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/splitindex
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/splitindex.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/splitindex.doc.r%{version}.tar.xz
