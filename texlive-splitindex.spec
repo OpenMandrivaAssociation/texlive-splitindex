@@ -1,5 +1,6 @@
 %global tl_name splitindex
 %global tl_revision 79618
+%global tl_bin_links splitindex:%{_texmfdistdir}/scripts/splitindex/splitindex.pl
 
 Name:		texlive-%{tl_name}
 Epoch:		1
@@ -16,6 +17,8 @@ BuildArch:	noarch
 BuildSystem:	texlive
 Requires:	texlive(splitindex.bin)
 Provides:	texlive(%{tl_name}) = %{tl_revision}
+Provides:	texlive(%{tl_name}.bin) = %{tl_revision}
+Provides:	texlive-%{tl_name}.bin = %{EVRD}
 
 %description
 SplitIndex consists of a LaTeX package, splitidx, and a small program,
